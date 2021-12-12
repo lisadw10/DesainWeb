@@ -1,0 +1,177 @@
+$MainColor: rgb(72, 145, 255);
+$BGColor : rgb(174, 206, 252);
+$ColorMenu: rgb(9, 118, 207);
+$FadedColor: rgb(248, 239, 209);
+$SectionColor: rgb(55, 95, 182);
+$widthContainer: auto ;
+$font: 14px;
+
+body {
+  background-color: $BGColor;
+  margin: 0px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  background-color: $MainColor;
+  h1 {
+    margin-left: 25px;
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    align-items: center;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    li {
+      width: 30%;
+      height: 90%;
+      margin-right: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $ColorMenu;
+      a {
+        text-decoration: none;
+        color:  white;
+      }
+    }
+    li:hover {
+      cursor: pointer;
+      background-color: rgb(62, 95, 243);
+    }
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  .Title_Page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 75px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: whitesmoke;
+      text-shadow: 3px 2px 1px grey;
+    }
+    p {
+      font-size: $font * 2;
+      text-transform: capitalize;
+      margin-top: 1px;
+    }
+  }
+}
+.container {
+  background-color: $MainColor;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  width: $widthContainer;
+  section {
+    .header_artikel {
+      display: flex;
+      justify-content: center;
+      .title_artikel {
+        h2 {
+          text-transform: capitalize;
+          text-align: center;
+          margin: 1px;
+          font-size: $font * 3;
+          font-weight: bold;
+        }
+        p {
+          font-size: $font;
+          margin: 5px;
+          color: $FadedColor;
+        }
+      }
+    }
+    article.sub_title {
+      h3 {
+        font-size: 11;
+      }
+      article.sub_sub_title {
+        font-size: 9 ;
+      }
+    }
+    background-color: $SectionColor;
+    padding: 10px;
+    width: 2600px;
+    height: 450px;
+    color: white;
+  }
+  aside {
+    width: 1500px;
+    color: white;
+    margin-left: 30px;
+    .X.title {
+      display: flex;
+      justify-content: center;
+    }
+    article {
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+footer {
+  height: 150px;
+  background-color: $ColorMenu;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: rgb(241, 234, 234);
+  .nama-Dev {
+    padding: 10px;
+    flex-basis: 40%;
+  }
+  .contact {
+    display: flex;
+
+    flex-basis: 20%;
+    align-items: center;
+    flex-direction: column;
+    .sosmed {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-top: 5px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .external-link {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    h2 {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 20%;
+        margin: 5px;
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
